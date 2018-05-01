@@ -1,0 +1,7 @@
+lexer grammar ID6;
+
+ID6: LETTERS CHARACTERS CHARACTERS CHARACTERS CHARACTERS CHARACTERS;
+
+
+fragment CHARACTERS: '0'..'9' | LETTERS;
+fragment LETTERS: 'A'..'Z'|'a'..'z';

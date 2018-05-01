@@ -9,6 +9,3 @@ treeAdd (Node1a a treeA treeB) x = (Node1a (a+x)) (treeAdd treeA x) (treeAdd tre
 treeSquare :: Tree1a -> Tree1a
 treeSquare (Leaf1a a) = (Leaf1a (a*a))
 treeSquare (Node1a a treeA treeB) = (Node1a (a*a)) (treeSquare treeA) (treeSquare treeB)
-
-mapTree :: (Int -> Int) -> Tree1a -> Tree1a
-mapTree func 

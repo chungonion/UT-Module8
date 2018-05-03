@@ -112,6 +112,8 @@ makeList (NodeInt number treeA LeafInt) = (makeList treeA) ++ [number]
 makeList (NodeInt number LeafInt treeB) = [number]++ (makeList treeB)
 makeList (NodeInt number treeA treeB) = (makeList treeA) ++ [number] ++(makeList treeB)
 
+sortList :: [Int] -> [Int]
+sortList list = makeList $ makeTree list 
 --Ex 23
 subTreeAt :: TreeInt -> Int -> Maybe TreeInt
 subTreeAt LeafInt _ = Nothing

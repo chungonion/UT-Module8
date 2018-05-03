@@ -19,5 +19,6 @@ addNode :: Tree1b -> Tree1a
 addNode (Leaf1b (a,b)) = Leaf1a (a+b)
 addNode (Node1b (a,b) treeA treeB) = (Node1a (a+b)) (addNode treeA) (addNode treeB)
 
--- mapTree1b :: ((Int,Int) -> Int) -> Tree1b ->  Tree1a
--- mapTree1b func (Leaf1b (a,b)) = Leaf1a 
+mapTree1b :: ((Int,Int) -> Int) -> Tree1b ->  Tree1a
+mapTree1b func (Leaf1b (a,b)) = Leaf1a (func (a,b))
+mapTree1b func (Node1b (a,b) treeA treeB) = (Node1a (func (a,b))) (mapTree1b func treeA) (mapTree1b func treeB)

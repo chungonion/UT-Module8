@@ -1,4 +1,4 @@
-// Generated from /Users/chungonion/Documents/UT Exchange academic documents Sem 2B/Programming Codes /Compiler Construction/Lab1/src/pp/block1/cc/antlr/Lalaland.g4 by ANTLR 4.7
+// Generated from /Users/chungonion/Documents/UT Exchange academic documents Sem 2B/Programming Codes/Compiler Construction/Lab1/src/pp/block1/cc/antlr/Lalaland.g4 by ANTLR 4.7
 package pp.block1.cc.antlr;
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;

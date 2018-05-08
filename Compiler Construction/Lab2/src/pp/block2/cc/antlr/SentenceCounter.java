@@ -9,10 +9,7 @@ import org.antlr.v4.runtime.tree.ParseTreeProperty;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
-import pp.block2.cc.antlr.SentenceParser.ModifierContext;
-import pp.block2.cc.antlr.SentenceParser.ObjectContext;
-import pp.block2.cc.antlr.SentenceParser.SentenceContext;
-import pp.block2.cc.antlr.SentenceParser.SubjectContext;
+import pp.block2.cc.antlr.SentenceParser.*;
 
 public class SentenceCounter extends SentenceBaseListener {
 	/** Map from Antlr tree nodes to ASTs. */

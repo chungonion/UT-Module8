@@ -69,9 +69,11 @@ public class Grammar {
 		}
 		lhsRules.add(rule);
 		for (Symbol symbol : rule.getRHS()) {
-			if (symbol instanceof Term) {
+			//Terminal and Non-Terminal are determined by the type of the symbol (all terms and non-terms are
+			//- inherited from Symbol superclass)
+			if (symbol instanceof Term) { //Checking whether Symbol is a Terminal
 				Term term = (Term) symbol;
-				this.terminals.add(term);
+				this.terminals.add(term); //Add terminal to the Set of terminals.
 				int tokenType = term.getTokenType();
 				if (tokenType != 0) {
 					while (this.termList.size() <= tokenType) {
